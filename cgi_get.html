@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>get_html :</title>
+</head>
+<body bgcolor=yellow>
+<form action="req_get.cgi" method="GET">  //req_get.cgi nom de l'exe
+<p align="center"><font color="#0000FF"><strong><u>PAGE DE
+TEST D'UNE REQUETE UTILISANT LA METHODE GET</u></strong></font></p>
+<p>Avec cette méthode, le serveur récupère les données de
+la requête dans une variable QUERY_STRING que l'on peut lire
+avec la fonction C getenv.</p>
+<p>Dans l'exemple suivant, la requête est envoyé au serveur
+en déclenchant l'exécution de l'exécutable req_get.cgi
+qui génére une page HTML contenant la chaîne reçue dans
+QUERY_STRING.</p>
+<br>
+<br>
+<p>texte libre : <input type="text" size="20" name="Message"></p>
+<br>
+<p>Sélection <select name="Taille" size="1">
+<option selected>petit</option>
+<option>moyen</option>
+<option>grand</option>
+</select></p>
+<br>
+<p><input type="radio" name="Ville" value="MONTP_34">MONTPELLIER</p>
+<p><input type="radio" checked name="Ville" value="NIMES_30">NIMES</p>
+<p><input type="radio" name="Ville" value="PERP_66">PERPIGNAN</p>
+<p><input type="submit" value="envoyez moi"></p>
+</form>
+</body>
+</html>
